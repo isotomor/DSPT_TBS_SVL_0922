@@ -24,8 +24,8 @@ Quantifiers:
 +       - 1 or More
 ?       - 0 or One
 {3}     - Exact Number
-{3,4}   - Range of Numbers (Minimum, Maximum)
-
+{3,4}   - Range of Numbers (Minimum, Maximum
+cambio 1 
 
 #### Sample Regexs ####
 
