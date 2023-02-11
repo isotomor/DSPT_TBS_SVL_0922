@@ -1,0 +1,1758 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <NavigationAction />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.SingleValuePerNestSorting.true...SingleValuePerNestSorting />
+    <SpecificWebTargetsForActions />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/Netflix_Workbook?rev=1.0' id='Netflix_Workbook' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Data (Netflix_Data)' inline='true' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix_Data' name='excel-direct.0q8osbs0smvm3g10a9kyb119jag9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0q8osbs0smvm3g10a9kyb119jag9' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:L7790:no:A1:L7790:0' header='yes' outcome='2'>
+            <column datatype='string' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0q8osbs0smvm3g10a9kyb119jag9' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:L7790:no:A1:L7790:0' header='yes' outcome='2'>
+            <column datatype='string' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L7790:no:A1:L7790:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Count_Title' datatype='integer' name='[Calculation_2715107641400999937]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([title])' />
+      </column>
+      <column caption='Count_Country' datatype='integer' name='[Calculation_2715107641401139202]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([country])' />
+      </column>
+      <column caption='Genre_Color' datatype='string' name='[Calculation_2715107641414934532]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [listed_in - Split 1] = [listed_in - Split 1] THEN &quot;A&quot;&#10;ELSE &quot;B&quot;&#10;END' />
+      </column>
+      <column caption='1' datatype='integer' name='[Calculation_2715107641418645509]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100' />
+      </column>
+      <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='[date_added]' />
+      </column>
+      <column datatype='string' name='[Date Added (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[date_added]' new-bin='true' />
+      </column>
+      <column datatype='string' name='[Release Year (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[release_year]' new-bin='true'>
+          <bin default-name='false' value='&quot;1960&apos;s&quot;'>
+            <value>1960</value>
+            <value>1962</value>
+            <value>1963</value>
+            <value>1964</value>
+            <value>1965</value>
+            <value>1966</value>
+            <value>1967</value>
+            <value>1968</value>
+            <value>1969</value>
+          </bin>
+          <bin default-name='false' value='&quot;1970&apos;s&quot;'>
+            <value>1970</value>
+            <value>1971</value>
+            <value>1972</value>
+            <value>1973</value>
+            <value>1974</value>
+            <value>1975</value>
+            <value>1976</value>
+            <value>1977</value>
+            <value>1978</value>
+            <value>1979</value>
+          </bin>
+          <bin default-name='false' value='&quot;1980&apos;s&quot;'>
+            <value>1980</value>
+            <value>1981</value>
+            <value>1982</value>
+            <value>1983</value>
+            <value>1984</value>
+            <value>1985</value>
+            <value>1986</value>
+            <value>1987</value>
+            <value>1988</value>
+            <value>1989</value>
+          </bin>
+          <bin default-name='false' value='&quot;1990&apos;s&quot;'>
+            <value>1990</value>
+            <value>1991</value>
+            <value>1992</value>
+            <value>1993</value>
+            <value>1994</value>
+            <value>1995</value>
+            <value>1996</value>
+            <value>1997</value>
+            <value>1998</value>
+            <value>1999</value>
+          </bin>
+          <bin default-name='false' value='&quot;2000&apos;s&quot;'>
+            <value>2000</value>
+            <value>2001</value>
+            <value>2002</value>
+            <value>2003</value>
+            <value>2004</value>
+            <value>2005</value>
+            <value>2006</value>
+            <value>2007</value>
+            <value>2008</value>
+            <value>2009</value>
+          </bin>
+          <bin default-name='false' value='&quot;2010&apos;s&quot;'>
+            <value>2010</value>
+            <value>2011</value>
+            <value>2012</value>
+            <value>2013</value>
+            <value>2014</value>
+            <value>2015</value>
+            <value>2016</value>
+            <value>2017</value>
+            <value>2018</value>
+            <value>2019</value>
+          </bin>
+          <bin default-name='false' value='&quot;2020&apos;s&quot;'>
+            <value>2020</value>
+            <value>2021</value>
+          </bin>
+          <bin default-name='false' value='&quot;Before 1960&quot;'>
+            <value>1925</value>
+            <value>1942</value>
+            <value>1943</value>
+            <value>1944</value>
+            <value>1945</value>
+            <value>1946</value>
+            <value>1947</value>
+            <value>1954</value>
+            <value>1955</value>
+            <value>1956</value>
+            <value>1958</value>
+            <value>1959</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_38DA9C716B574FF4A89F8D5A311B67CB]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Country - Split 1' datatype='string' name='[country - Split 1]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[country]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [country], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='Country - Split 2' datatype='string' name='[country - Split 2]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[country]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [country], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Genre' datatype='string' name='[listed_in - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+        <calculation class='tableau' formula='Replace(TRIM( SPLIT( [listed_in], &quot; &quot;, 1 ) ),&quot;,&quot;,&quot;&quot;)' />
+      </column>
+      <column caption='Listed In - Split 2' datatype='string' name='[listed_in - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [listed_in], &quot; &quot;, 2 ) )' />
+      </column>
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='string' name='[show_id]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date_added]' derivation='Year' name='[yr:date_added:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Country - Split 1)' hidden='true' name='[Action (Country - Split 1)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country - Split 1]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Genre)' hidden='true' name='[Action (Genre)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[listed_in - Split 1]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Type,YEAR(Date Added))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:type:nk]' />
+          <groupfilter function='level-members' level='[yr:date_added:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Country - Split 1)' hidden='true' name='[Tooltip (Country - Split 1)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country - Split 1]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Genre,Type)' hidden='true' name='[Tooltip (Genre,Type)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[listed_in - Split 1]' />
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Listed In - Split 1,Type)' hidden='true' name='[Tooltip (Listed In - Split 1,Type)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[listed_in - Split 1]' />
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (YEAR(Date Added),Type)' hidden='true' name='[Tooltip (YEAR(Date Added),Type)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:date_added:ok]' />
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1one9hc01e6syw108lsjd17ui7nm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/28/2021 06:34:23 PM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>show_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[show_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>show_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7789</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7789</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>director</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2408</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cast</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cast]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cast</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4499</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>344</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_added</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_added</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1182</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duration</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>listed_in</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[listed_in]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>listed_in</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>405</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_38DA9C716B574FF4A89F8D5A311B67CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Data' id='Data_38DA9C716B574FF4A89F8D5A311B67CB'>
+            <properties context=''>
+              <relation connection='excel-direct.0q8osbs0smvm3g10a9kyb119jag9' name='Data' table='[Data$]' type='table'>
+                <columns gridOrigin='A1:L7790:no:A1:L7790:0' header='yes' outcome='2'>
+                  <column datatype='string' name='show_id' ordinal='0' />
+                  <column datatype='string' name='type' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='director' ordinal='3' />
+                  <column datatype='string' name='cast' ordinal='4' />
+                  <column datatype='string' name='country' ordinal='5' />
+                  <column datatype='date' name='date_added' ordinal='6' />
+                  <column datatype='integer' name='release_year' ordinal='7' />
+                  <column datatype='string' name='rating' ordinal='8' />
+                  <column datatype='string' name='duration' ordinal='9' />
+                  <column datatype='string' name='listed_in' ordinal='10' />
+                  <column datatype='string' name='description' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+      <datasources>
+        <datasource caption='Data (Netflix_Data)' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+        <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+          <calculation class='tableau' formula='[date_added]' />
+        </column>
+        <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+        <column caption='Genre' datatype='string' name='[listed_in - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+          <calculation class='tableau' formula='Replace(TRIM( SPLIT( [listed_in], &quot; &quot;, 1 ) ),&quot;,&quot;,&quot;&quot;)' />
+        </column>
+        <column-instance column='[Date Added (copy)_320600020824875008]' derivation='None' name='[none:Date Added (copy)_320600020824875008:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[director]' derivation='None' name='[none:director:nk]' pivot='key' type='nominal' />
+        <column-instance column='[listed_in - Split 1]' derivation='None' name='[none:listed_in - Split 1:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' included-values='in-range'>
+        <min>#2008-04-10#</min>
+        <max>#2021-01-16#</max>
+      </filter>
+      <filter class='categorical' column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]'>
+        <groupfilter function='level-members' level='[none:director:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]'>
+        <groupfilter function='level-members' level='[none:listed_in - Split 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Maps' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 10' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Hyperlink1' name='[Action4_F3972F2C54D14654AA7A30C1D3F0015A]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='List' />
+      <link caption='' expression='https://www.imdb.com/'>
+        <url-action-type>specific-zone</url-action-type>
+        <url-action-target>25</url-action-target>
+      </link>
+    </action>
+    <nav-action caption='Go to the complete List' name='[Action1]'>
+      <source type='sheet' worksheet='Maps' />
+      <params>
+        <param name='sheet' value='Productions_List' />
+      </params>
+    </nav-action>
+  </actions>
+  <worksheets>
+    <worksheet name='List'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Which film do you want to see tonight?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#ffffff' fontsize='11'>Organise your films: put your mouse over a column, click on the alphabet symbol and sort the table based on that field.</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Netflix_Data)' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+            <column caption='&quot;Duration&quot;' datatype='string' name='[Calculation_260364376831029250]' role='dimension' type='nominal' user:unnamed='List'>
+              <calculation class='tableau' formula='&quot;Duration&quot;' />
+            </column>
+            <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='[date_added]' />
+            </column>
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column caption='Genre' datatype='string' name='[listed_in - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+              <calculation class='tableau' formula='Replace(TRIM( SPLIT( [listed_in], &quot; &quot;, 1 ) ),&quot;,&quot;,&quot;&quot;)' />
+            </column>
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_260364376831029250]' derivation='None' name='[none:Calculation_260364376831029250:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date Added (copy)_320600020824875008]' derivation='None' name='[none:Date Added (copy)_320600020824875008:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[director]' derivation='None' name='[none:director:nk]' pivot='key' type='nominal' />
+            <column-instance column='[duration]' derivation='None' name='[none:duration:nk]' pivot='key' type='nominal' />
+            <column-instance column='[listed_in - Split 1]' derivation='None' name='[none:listed_in - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:title:nk]' direction='ASC' measure-to-sort-by='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:title:nk]' shelf='rows' />
+          </_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='201' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]' value='228' />
+            <format attr='width' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]' value='244' />
+            <format attr='width' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:title:nk]' value='184' />
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-size' scope='rows' value='16' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Calculation_260364376831029250:nk]' value='true' />
+            <format attr='text-align' scope='rows' value='left' />
+            <format attr='text-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' value='Select dates'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Arial' fontsize='14'>Select dates</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]' value='Want to search by Genre?'>
+              <formatted-text>
+                <run bold='true' fontname='Arial' fontsize='14'>Want to search by Genre?</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]' value='Want to search by director?'>
+              <formatted-text>
+                <run bold='true' fontname='Arial' fontsize='14'>Want to search by director?</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:duration:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:title:nk] / ([federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk] / [federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]))</rows>
+        <cols>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Calculation_260364376831029250:nk]</cols>
+      </table>
+      <simple-id uuid='{07FDBA48-FB70-42F7-884C-49828C4F81D2}' />
+    </worksheet>
+    <worksheet name='Maps'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>How many Netflix films and series have been made per country?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#ffffff' fontsize='11'>Click on a country to filter it.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Netflix_Data)' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+            <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='[date_added]' />
+            </column>
+            <column caption='Country - Split 1' datatype='string' name='[country - Split 1]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[country]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [country], &quot;,&quot;, 1 ) )' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+            <column caption='Genre' datatype='string' name='[listed_in - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+              <calculation class='tableau' formula='Replace(TRIM( SPLIT( [listed_in], &quot; &quot;, 1 ) ),&quot;,&quot;,&quot;&quot;)' />
+            </column>
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[Date Added (copy)_320600020824875008]' derivation='None' name='[none:Date Added (copy)_320600020824875008:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country - Split 1]' derivation='None' name='[none:country - Split 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[director]' derivation='None' name='[none:director:nk]' pivot='key' type='nominal' />
+            <column-instance column='[listed_in - Split 1]' derivation='None' name='[none:listed_in - Split 1:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Action (Genre)]'>
+            <groupfilter function='level-members' level='[listed_in - Split 1]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:country - Split 1:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:country - Split 1:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:country - Split 1:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:country - Split 1:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:country - Split 1:nk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Action (Genre)]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Longitude (generated)]' field-type='quantitative' max='17712546.124275863' min='-16243990.398873765' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Latitude (generated)]' field-type='quantitative' max='13968581.234392058' min='-5445806.9289935064' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' value='Select dates'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='14'>Select dates</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' />
+              <size column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' />
+              <lod column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:country - Split 1:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontname='Arial' fontsize='12'><![CDATA[<[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:country - Split 1:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Arial'>Number of titles:&#9;</run>
+                <run bold='true' fontname='Arial'><![CDATA[<[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='4.0442090034484863' />
+                <format attr='mark-transparency' value='91' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Latitude (generated)]</rows>
+        <cols>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{45BE65E6-B1AD-47C8-89AF-9AE89AF90AD7}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>How many films and series have been made per film genre? </run>
+            <run bold='true' fontcolor='#ffffff'><![CDATA[(<[federated.1qq2ej90f5yf2r14oca3p02wvavo].[country - Split 1]>)]]></run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#ffffff' fontsize='11'>Click on a genre to filter it.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (Netflix_Data)' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+            <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='[date_added]' />
+            </column>
+            <column caption='Country - Split 1' datatype='string' name='[country - Split 1]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[country]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [country], &quot;,&quot;, 1 ) )' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+            <column caption='Genre' datatype='string' name='[listed_in - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+              <calculation class='tableau' formula='Replace(TRIM( SPLIT( [listed_in], &quot; &quot;, 1 ) ),&quot;,&quot;,&quot;&quot;)' />
+            </column>
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[Date Added (copy)_320600020824875008]' derivation='None' name='[none:Date Added (copy)_320600020824875008:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[director]' derivation='None' name='[none:director:nk]' pivot='key' type='nominal' />
+            <column-instance column='[listed_in - Split 1]' derivation='None' name='[none:listed_in - Split 1:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Action (Country - Split 1)]'>
+            <groupfilter function='level-members' level='[country - Split 1]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[Action (Country - Split 1)]</column>
+            <column>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' scope='cols' value='Number of titles' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' scope='cols' value='#c0c0c0' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='height-header' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#d4d4d4' />
+            <format attr='color' scope='cols' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' palette='red_black_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-color' scope='cols' value='#e6e6e6' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#d4d4d4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' />
+              <text column='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5932043790817261' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#666666' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]</rows>
+        <cols>[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]</cols>
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{C0C8F356-73E0-431E-A07A-BACB5F9AF870}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1700' minheight='900' minwidth='1700' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Data (Netflix_Data)' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+        <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+          <calculation class='tableau' formula='[date_added]' />
+        </column>
+        <column-instance column='[Date Added (copy)_320600020824875008]' derivation='None' name='[none:Date Added (copy)_320600020824875008:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94667' id='16' param='horz' type-v2='layout-flow' w='95302' x='2345' y='889'>
+            <zone h='94667' id='14' type-v2='layout-basic' w='95302' x='2345' y='889'>
+              <zone h='61579' id='10' param='horz' type-v2='layout-flow' w='95302' x='2345' y='33977'>
+                <zone h='61579' id='5' type-v2='layout-basic' w='95302' x='2345' y='33977'>
+                  <zone h='61579' id='3' name='Maps' w='44420' x='2345' y='33977'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='61579' id='8' name='Sheet 10' w='46971' x='50676' y='33977'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='61579' id='56' type-v2='empty' w='3911' x='46765' y='33977'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='33088' id='13' type-v2='empty' w='95302' x='2345' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='3555' id='48' type-v2='empty' w='95302' x='2345' y='95556'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98222' id='54' type-v2='empty' w='1874' x='471' y='889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98222' id='55' type-v2='empty' w='1882' x='97647' y='889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8333' id='17' name='Maps' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' type-v2='filter' values='database' w='9882' x='87412' y='22889' />
+        <zone h='36111' id='11' is-scaled='1' param='Image/netflix_PNG26.png' type-v2='bitmap' w='19118' x='38176' y='-7222' />
+        <zone h='33333' id='20' is-scaled='1' param='Image/netflix_title.png' type-v2='bitmap' w='33294' x='31176' y='6333' />
+        <zone h='5778' id='23' type-v2='dashboard-object' w='9647' x='83471' y='3889'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{54575938-1F6D-42BB-8CF9-21207FECC05F}&quot;'>
+            <button-visual-state>
+              <image-path>Image/Forward.png</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='3333' id='49' type-v2='text' w='19118' x='471' y='96333'>
+          <formatted-text>
+            <run fontcolor='#ffffff'>Source: </run>
+            <run auto-url='true' fontcolor='#ffffff' hyperlink='tabdoc:load-url url=&amp;quot;https://www.kaggle.com/shivamb/netflix-shows&amp;quot;'>https://www.kaggle.com/shivamb/netflix-shows</run>
+          </formatted-text>
+        </zone>
+        <zone h='8000' id='65' is-scaled='1' param='Image/Visualitics-logo-bianco.png' type-v2='bitmap' w='8235' x='824' y='1333' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='69' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='68' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+                <zone fixed-size='280' h='36111' id='11' is-fixed='true' is-scaled='1' param='Image/netflix_PNG26.png' type-v2='bitmap' w='19118' x='38176' y='-7222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='72' h='8000' id='65' is-fixed='true' is-scaled='1' param='Image/Visualitics-logo-bianco.png' type-v2='bitmap' w='8235' x='824' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5778' id='23' type-v2='dashboard-object' w='9647' x='83471' y='3889'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{54575938-1F6D-42BB-8CF9-21207FECC05F}&quot;'>
+                    <button-visual-state>
+                      <image-path>Image/Forward.png</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33333' id='20' is-fixed='true' is-scaled='1' param='Image/netflix_title.png' type-v2='bitmap' w='33294' x='31176' y='6333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8333' id='17' name='Maps' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' type-v2='filter' values='database' w='9882' x='87412' y='22889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='61579' id='3' is-fixed='true' name='Maps' w='44420' x='2345' y='33977'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='61579' id='8' is-fixed='true' name='Sheet 10' w='46971' x='50676' y='33977'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3333' id='49' type-v2='text' w='19118' x='471' y='96333'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff'>Source: </run>
+                    <run auto-url='true' fontcolor='#ffffff' hyperlink='tabdoc:load-url url=&amp;quot;https://www.kaggle.com/shivamb/netflix-shows&amp;quot;'>https://www.kaggle.com/shivamb/netflix-shows</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F1D5B301-60E7-4555-AAE2-711283A94F37}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1700' minheight='900' minwidth='1700' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Data (Netflix_Data)' name='federated.1qq2ej90f5yf2r14oca3p02wvavo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1qq2ej90f5yf2r14oca3p02wvavo'>
+        <column caption='Date Added (copy)' datatype='date' name='[Date Added (copy)_320600020824875008]' role='dimension' type='quantitative'>
+          <calculation class='tableau' formula='[date_added]' />
+        </column>
+        <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+        <column caption='Genre' datatype='string' name='[listed_in - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[listed_in]'>
+          <calculation class='tableau' formula='Replace(TRIM( SPLIT( [listed_in], &quot; &quot;, 1 ) ),&quot;,&quot;,&quot;&quot;)' />
+        </column>
+        <column-instance column='[Date Added (copy)_320600020824875008]' derivation='None' name='[none:Date Added (copy)_320600020824875008:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[director]' derivation='None' name='[none:director:nk]' pivot='key' type='nominal' />
+        <column-instance column='[listed_in - Split 1]' derivation='None' name='[none:listed_in - Split 1:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94667' id='30' param='horz' type-v2='layout-flow' w='96588' x='2941' y='889'>
+            <zone h='94667' id='14' type-v2='layout-basic' w='96588' x='2941' y='889'>
+              <zone h='61581' id='10' param='horz' type-v2='layout-flow' w='96588' x='2941' y='33975'>
+                <zone h='61581' id='5' type-v2='layout-basic' w='96588' x='2941' y='33975'>
+                  <zone h='58025' id='24' name='List' w='46458' x='2941' y='33975'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='' h='55000' id='25' param='https://elpais.com/' type-v2='web' w='46461' x='51232' y='40556'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='61581' id='50' type-v2='empty' w='1833' x='49399' y='33975'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='61581' id='55' type-v2='empty' w='1836' x='97693' y='33975'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3556' id='58' type-v2='empty' w='46458' x='2941' y='92000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='6581' id='59' type-v2='text' w='46461' x='51232' y='33975'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#ffffff' fontsize='18'>Make sure you&apos;ll like the film: find out more at IMDB!</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='33086' id='13' type-v2='empty' w='96588' x='2941' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='3555' id='51' type-v2='empty' w='49529' x='50000' y='95556'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='3555' id='56' type-v2='text' w='47059' x='2941' y='95556'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98222' id='57' type-v2='empty' w='2470' x='471' y='889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8333' id='17' name='List' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' type-v2='filter' values='database' w='9882' x='18882' y='18222' />
+        <zone h='36111' id='11' is-scaled='1' param='Image/netflix_PNG26.png' type-v2='bitmap' w='19118' x='38176' y='-7222' />
+        <zone h='33333' id='20' is-scaled='1' param='Image/netflix_title.png' type-v2='bitmap' w='33294' x='31176' y='6333' />
+        <zone h='5778' id='23' type-v2='dashboard-object' w='9647' x='87471' y='3889'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{99B4A30F-E894-4B1D-A427-4D4556A7C719}&quot;'>
+            <button-visual-state>
+              <image-path>Image/Back.png</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='5778' id='28' mode='checkdropdown' name='List' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]' type-v2='filter' values='database' w='15588' x='1412' y='22000' />
+        <zone h='9778' id='31' mode='checkdropdown' name='List' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]' type-v2='filter' values='database' w='15294' x='1412' y='12222' />
+        <zone h='6222' id='68' is-scaled='1' param='Image/Visualitics-logo-bianco.png' type-v2='bitmap' w='8941' x='706' y='1667' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='72' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='71' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='36111' id='11' is-fixed='true' is-scaled='1' param='Image/netflix_PNG26.png' type-v2='bitmap' w='19118' x='38176' y='-7222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='56' h='6222' id='68' is-fixed='true' is-scaled='1' param='Image/Visualitics-logo-bianco.png' type-v2='bitmap' w='8941' x='706' y='1667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5778' id='23' type-v2='dashboard-object' w='9647' x='87471' y='3889'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{99B4A30F-E894-4B1D-A427-4D4556A7C719}&quot;'>
+                    <button-visual-state>
+                      <image-path>Image/Back.png</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33333' id='20' is-fixed='true' is-scaled='1' param='Image/netflix_title.png' type-v2='bitmap' w='33294' x='31176' y='6333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8333' id='17' name='List' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' type-v2='filter' values='database' w='9882' x='18882' y='18222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5778' id='28' mode='checkdropdown' name='List' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]' type-v2='filter' values='database' w='15588' x='1412' y='22000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9778' id='31' mode='checkdropdown' name='List' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]' type-v2='filter' values='database' w='15294' x='1412' y='12222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58025' id='24' is-fixed='true' name='List' w='46458' x='2941' y='33975'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6581' id='59' type-v2='text' w='46461' x='51232' y='33975'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontsize='18'>Make sure you&apos;ll like the film: find out more at IMDB!</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' forceUpdate='true' h='55000' id='25' is-fixed='true' param='https://elpais.com/' type-v2='web' w='46461' x='51232' y='40556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3555' id='56' type-v2='text' w='47059' x='2941' y='95556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F3B98D19-E891-4AC1-90DF-25F378A51F11}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Maps'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{99B4A30F-E894-4B1D-A427-4D4556A7C719}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='List'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='25' />
+      <simple-id uuid='{54575938-1F6D-42BB-8CF9-21207FECC05F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='List'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:director:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:listed_in - Split 1:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5D929C9-0C93-4A1E-A2B3-7352049DA781}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Maps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[none:Date Added (copy)_320600020824875008:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <map-scale-visibility value='0' />
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{960AC3BA-BD8E-4508-B8B6-D865F23C1C34}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qq2ej90f5yf2r14oca3p02wvavo].[ctd:title:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1CCECFC9-5C84-4EC9-ACE0-F795A139B587}' />
+    </window>
+  </windows>
+</workbook>
